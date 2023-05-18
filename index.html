@@ -1,0 +1,42 @@
+<!--
+  PROG 5075 - Assignment 3 
+  Index.html
+  Carey Hill
+  March 2023
+  HTML index for map  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./main.js"></script>
+    <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
+    <title>Victoria, British Columbia</title>
+  </head>
+  <body>
+    <div id="titleoverlay">
+        <h2>Relative Location of Popular Parks</h3>
+        <p>Victoria, BC</p>
+        <h5>&copy; Carey Hill</h5>   
+    </div>
+    <div id="map"></div>
+    <div id="mouse-position"></div>
+    <form>
+      <label for="projection">Projection </label>
+      <select id="projection">
+        <option value="EPSG:4326">EPSG:4326</option>
+      </select>
+      <label for="precision">Precision</label>
+      <input id="precision" type="number" min="0" max="12" value="4"/>
+    </form>
+    <div id="overlayimg">
+      <img src="victoria_map\images\cogs-footerlogo1.png" alt="logo">
+    </div>
+    <div id="layerSwitcher" class="layerSwitcher"></div>
+  </body>
+</html>
+
+

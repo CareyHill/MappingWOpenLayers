@@ -1,0 +1,54 @@
+/*
+  PROG 5075 - Assignment 3 
+  Style.css
+  Carey Hill
+  March 2023
+  -- style sheet file for  map 
+*/
+
+@import "node_modules/ol/ol.css";
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#layerSwitcher {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#titleoverlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#overlayimg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+
+
+
